@@ -1,6 +1,20 @@
-def multiples_three(int):
-  multiples=[]
-  for i in range(2,int):
+# set lists and variables
+total=0
+multiples_A=[]
+multiples_B=[]
+# function to find multiples of three lower than int
+def multiples_three(integer):
+  for i in range(2,integer):
     if (i%3==0):
-      multiples.append(i)
-  print(multiples)
+      multiples_A.append(i)
+  return multiples_A
+# function to find multiples of five lower than int
+def multiples_five(integer):
+  for i in range(2,integer):
+    if (i%5==0):
+      multiples_B.append(i)
+  return multiples_B
+
+multiples=multiples_three(1000)
+multiples.append(multiples_five(1000))
+total=sum(multiples)
