@@ -1,6 +1,6 @@
 def multiples_three(int):
   multiples=[]
-  for i in range(2:int):
+  for i in range(2,int):
     if (i%3==0):
       multiples.append(i)
-  print multiples
+  print(multiples)
